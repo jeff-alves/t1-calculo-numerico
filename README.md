@@ -29,9 +29,10 @@ Desenvolva um sistema para calcular esse deslocamento x da extremidade de um fog
       -a , --ajustes     Lista com os ajustes "a" para a função. EX: "[1, 2, 3, 4]"
       -i , --intervalo   Intervalo que contem a raizes. EX: "[1, 3]"
       -c , --chute       Chute inicial para x0. Usado apenas para o metodo de Newton.
-      -e , --erro        Erro máximo permitido. EX: "10^-4"
-      -p , --precisao    Precisão a ser usada nos calculos.
-      -m , --max         Limite de iterações permitidas para cada metodo.
+      -e , --erro        Erro máximo permitido. Default: 10^-4. EX: "10^-6"
+      -p , --precisao    Precisão a ser usada nos calculos. Default: 6
+      -m , --max         Limite de iterações permitidas para cada metodo. Default: 50
+
     
 **Exemplo de uso:**
 

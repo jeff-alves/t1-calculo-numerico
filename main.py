@@ -13,9 +13,9 @@ if __name__ == '__main__':
     parser.add_argument('-a', '--ajustes', metavar='', required=True, type=str, help='Lista com os ajustes "a" para a função. EX: "[1, 2, 3, 4]"')
     parser.add_argument('-i', '--intervalo', metavar='', required=True, default='None', type=str, help='Intervalo que contem a raizes. EX: "[1, 3]"')
     parser.add_argument('-c', '--chute', metavar='', default=None, type=float, help='Chute inicial para x0. Usado apenas para o metodo de Newton.')
-    parser.add_argument('-e', '--erro', metavar='', default='10^-4', type=str, help='Erro máximo permitido. EX: "10^-4"')
-    parser.add_argument('-p', '--precisao', metavar='', default=6, type=int, help='Precisão a ser usada nos calculos.')
-    parser.add_argument('-m', '--max', metavar='', default=50, type=int, help='Limite de iterações permitidas para cada metodo.')
+    parser.add_argument('-e', '--erro', metavar='', default='10^-4', type=str, help='Erro máximo permitido. Default: 10^-4. EX: "10^-6"')
+    parser.add_argument('-p', '--precisao', metavar='', default=6, type=int, help='Precisão a ser usada nos calculos. Default: 6')
+    parser.add_argument('-m', '--max', metavar='', default=50, type=int, help='Limite de iterações permitidas para cada metodo. Default: 50')
 
     args = parser.parse_args()
 
