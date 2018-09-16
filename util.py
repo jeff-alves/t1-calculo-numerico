@@ -9,3 +9,7 @@ def str_to_func(func, vars):
     if type(vars) == str:
         vars = symbols(vars)
     return Lambda(vars, parse_expr(func, transformations=transformations))
+
+def str_to_eq(func):
+    transformations = (standard_transformations + (implicit_multiplication_application, convert_xor))
+    return parse_expr(func, transformations=transformations)
