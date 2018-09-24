@@ -20,9 +20,9 @@ Desenvolva um sistema para calcular esse deslocamento x da extremidade de um fog
 
     python main.py -h
     usage: main.py [-h] -f  -a  -i  [-c] [-e] [-p] [-m]
-    
+
     Trabalho de Cálculo Numérico
-    
+
     optional arguments:
       -h, --help         show this help message and exit
       -f , --funcao      Função  f(x,a) a ser usada. EX: "ax - x ln(x)"
@@ -33,7 +33,7 @@ Desenvolva um sistema para calcular esse deslocamento x da extremidade de um fog
       -p , --precisao    Precisão a ser usada nos calculos. Default: 6
       -m , --max         Limite de iterações permitidas para cada metodo. Default: 50
 
-    
+
 **Exemplo de uso:**
 
-    python -m main -f 'ax - x ln(x)' -a '[-50, -1, 0, 0.69315218, 0.693147, 1, 1.9065, 2, 3, 4, 5]' -i '[1,3]'
+    python main.py -f 'ax - x ln(x)' -a '[-50, -1, 0, 0.6931471805, 1, 1.9065, 2, 3]' -i '[0.01,25]' -e '10^-10' -p 12
